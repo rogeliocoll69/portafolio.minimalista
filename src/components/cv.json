@@ -1,0 +1,87 @@
+{
+  "Conceptosbasicos": {
+    "Nombres": "Kelvin Rogelio",
+    "Apellidos": "Figueira Lopez",
+    "Etiqueta": "Programador Junior apasionado por la resolución de problemas y el aprendizaje continuo en el desarrollo de software. Estoy comprometido a contribuir al éxito del equipo y en mejorar constante mis habilidades técnicas.",
+    "imagen": "",
+    "CorreoElectrónico": "rogeliocoll69@gmail.com",
+    "Telefono": "11 7360-1510",
+    "Whatsapp": "+54 9 11 6027-0706",
+    "summary": "Un resumen de John Doe…",
+    "Ubicación": {
+      "Pais": "Argentina",
+      "Estado": "Buenos Aires",
+      "Ciudad": "Ciudad Autonoma de Buenos Aires (C.A.B.A)",
+      "Direccion": "Moreno, 2545",
+      "Codigo postal": "1094"
+    },
+    "trabajo": [{
+      "nombre": "Empresa",
+      "cargo": "Presidente",
+      "url": "https://empresa.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Descripción…",
+      "reflejos": [
+        "Inició la empresa"
+      ]
+    }],
+    "Educación Univercitaria": [{
+      "institucion": "Universidad Gran Mariscal de Ayacucho",
+      "Titulo": "Abogado",
+      "StudyType": "Licenciatura",
+      "StartDate": "2010-09-06",
+      "EndDate": "2015-06-29"
+    }],
+    "certificados": [{
+      "nombre": "Certificado",
+      "fecha": "2021-11-07",
+      "emisor": "Empresa",
+      "url": "https://certificado.com"
+    }],
+    "habilidades": [{
+      "nombre": "Desarrollo web",
+      "nivel": "Junior",
+      "palabras clave": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "SQL",
+        "Astro"
+      ]
+    }],
+    "Idiomas": [{
+      "Idioma": "Español",
+      "Nivel": "Hablante nativo",
+      "Idioma2": "Portugues",
+      "Nivel2": "Avanzado",
+      "Idioma3": "Ingles",
+      "Nivel3": "Basico"
+    }],
+    "intereses": [{
+      "nombre": "Legue of Legends(LOL), FUTBOL, TENIS",
+      "personajes habituales": "",
+      "Palabras Clave": [
+        "TOP",
+        "JUNGLER",
+        "MEDIOCAMPISTA",
+        "DELANTERO"
+      ]
+    }],
+    "referencias": [{
+      "nombre": "Jose Madriz",
+      "referencia": "https://www.linkedin.com/in/madrizjosea/"
+    }],
+    "proyectos": [{
+      "nombre": "Proyecto",
+      "fecha de inicio": "2019-01-01",
+      "fecha de finalización": "2021-01-01",
+      "descripción": "Descripción...",
+      "reflejos": [
+        "Ganó el premio en AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }]
+  }
+}

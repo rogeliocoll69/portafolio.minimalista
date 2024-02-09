@@ -1,0 +1,51 @@
+---
+//const { Conceptosbasicos } = require('../cv.json');
+//por q mierda no da 
+import { Conceptosbasicos } from "../../cv.json";
+import Section from "./Section.astro";
+
+
+const { Nombres, Apellidos, Etiqueta, Telefono, CorreoElectronico } = Conceptosbasicos;
+
+const { Pais, Estado, Ciudad } = Conceptosbasicos.Ubicacion;
+
+import imagen from "../../imagen.jpg";
+
+//const imagen = imagen;
+//en min 26 realizo un truco en el cual en el v.s. metio los componentes en una carpeta y el codigo se actualizo solo!!
+//yo lo realice manualmente
+---
+
+<Section>
+    <div class="container">
+        <div class="info">
+            <h1>{Nombres}</h1>
+            <h3>{Etiqueta}</h3>
+            <span>
+                
+               {Pais}, {Ciudad}
+            </span>
+            <footer>
+                {
+                   CorreoElectronico &&  (
+                     
+                      <a
+                     href={`mailto:${CorreoElectronico}`}
+                     title={`Enviar correo electrónico a ${Nombres} al correo ${CorreoElectronico}`}
+                     target="_blank"
+                     rel="nooponer noreferrer"
+                     ><!-- Icono de correo electrónico -->
+                     </a>
+                    )
+
+                }
+
+            </footer>
+        </div>
+        <figure>
+            <img src= {imagen} /> <!-- Asegúrate de definir la variable 'imagen' -->
+        </figure>
+    </div>
+</Section>
+
+<style></style>

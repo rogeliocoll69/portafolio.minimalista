@@ -14,7 +14,23 @@
       "Ciudad": "Ciudad Autonoma de Buenos Aires (C.A.B.A)",
       "Direccion": "Moreno, 2545",
       "Codigo postal": "1094"
-    },
+    }
+  },
+
+    "Profiles": [
+      {
+        "network": "Github",
+        "username": "rogeliocoll69",
+        "url": "https://github.com/rogeliocoll69"
+      },
+      
+      {
+        "network": "Likelin",
+        "username": "rogeliocoll69",
+        "url": "https://www.linkedin.com/in/kelvin-figueira-58571a1aa/"
+      }
+    ]
+  
     "trabajo": [{
       "nombre": "Empresa",
       "cargo": "Presidente",
@@ -26,6 +42,7 @@
         "Inició la empresa"
       ]
     }],
+
     "Educación Univercitaria": [{
       "institucion": "Universidad Gran Mariscal de Ayacucho",
       "Titulo": "Abogado",
@@ -83,5 +100,5 @@
       ],
       "url": "https://project.com/"
     }]
-  }
+  
 }

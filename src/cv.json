@@ -7,7 +7,7 @@
     "CorreoElectronico": "rogeliocoll69@gmail.com",
     "Telefono": "11 7360-1510",
     "Whatsapp": "+54 9 11 6027-0706",
-    "summary": "Un resumen de John Doe…",
+    "summary": "¡Hola! Soy Kelvin, un apasionado Programador Junior, con experiencia en diversas tecnologias, aprendiendo todos los dias algo nuevo, he desarrollado pequeños proyectos diversos, tanto backend como frontend; me llama mucho la atencion lo que se puede hacer con JavaScrip, Css, Html, estas tecnologias son las bases para muchas otras; me deslumbra lo que en un futuro se podria hacer con Inteligencia Artifical",
     "Ubicacion": {
       "Pais": "Argentina",
       "Estado": "Buenos Aires",
@@ -15,17 +15,50 @@
       "Direccion": "Moreno, 2545",
       "Codigo postal": "1094"
     },
-    "trabajo": [{
-      "nombre": "Empresa",
-      "cargo": "Presidente",
-      "url": "https://empresa.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Descripción…",
-      "reflejos": [
-        "Inició la empresa"
-      ]
-    }],
+  
+
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "rogeliocoll69",
+        "url": "https://github.com/rogeliocoll69"
+      },
+      
+      {
+        "network": "Linkedin",
+        "username": "rogeliocoll69",
+        "url": "https://www.linkedin.com/in/kelvin-figueira-58571a1aa/"
+      }
+    ]
+  },
+   
+
+    "Trabajo": [
+      {
+      "Empresa": "DellAngelo Sanducheria e Grill(BRA)",
+      "cargo": "Mozo, Asistente de bar y restaurante",
+      "periodo": "1 Año",
+      "summary": "Comence a trabajar aqui a finales del 2017, Era un restaurante en Brazil, muy buenas comidas y excelente atencion al publico."
+      },
+      {
+      "Empresa": "Tribunal Supremo de Justicia(VEN)",
+      "cargo": "Asistente, Archivista",
+      "periodo": "5 Años",
+      "summary": "Comence a trabajar en el Tribunal Supremo de Justicia en Venezuela, a finales del 2012, una de mis primeras chambas en blanco, es decir todo en ley"
+      },
+      {
+      "Empresa": "Agencia de Publicidad Dreamaker, C.A.(VEN)",
+      "cargo": "Operador de Plotter, Instalador",
+      "periodo": "1 Año",
+      "summary": "Comence a trabajar aqui a finales del 2011, aqui empece a aprender sobre marketing y gigantografias"
+      },
+      {
+      "Empresa": "Tu Hogar Soñado, C.A. (ARG)",
+      "cargo": "Ayudante de: Albañil, Mantenimiento, Plomero, Electricista; Trabajo en Alturas, Pintor",
+      "periodo": "1 Año",
+      "summary": "Comence a trabajar aqui a finales del 2018, aqui obtube muchos conocimientos de matenimiento de infraestructuras, trabajo en alturas, plomeria, electricidad, pintura, lo basico para poder salir adelante"
+      }
+    ],
     "EducaciónUnivercitaria": [{
       "institucion": "Universidad Gran Mariscal de Ayacucho",
       "Titulo": "Abogado",
@@ -39,18 +72,65 @@
       "emisor": "Empresa",
       "url": "https://certificado.com"
     }],
-    "habilidades": [{
-      "nombre": "Desarrollo web",
+    "Habilidades": [
+      {
+      "nombre": "HTML",
       "nivel": "Junior",
-      "palabras clave": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "SQL",
-        "Astro"
-      ]
-    }],
+      "palabrasclave": [
+        "Frontend", "Desarrollo Web"
+        ]
+      },
+      {
+        "nombre": "CSS",
+        "nivel": "Junior",
+        "palabrasclave": [
+          "Frontend", "Diseño Responsivo", "Desarrollo Web"
+          ]
+        },
+        {
+          "nombre": "JavaScript",
+          "nivel": "Junior",
+          "palabrasclave": [
+            "Frontend", "Backend", "Fullstack", "Desarrollo Web"
+            ]
+          },
+          {
+            "nombre": "SQL",
+            "nivel": "Junior",
+            "palabrasclave": [
+              "Bases de Datos", "Backend"
+              ]
+            },
+            {
+              "nombre": "Git",
+              "nivel": "Junior",
+              "palabrasclave": [
+                "Control de Versiones", "Colaboracion", "Codigo fuente"
+                ]
+              },
+              {
+              "nombre": "GitHub",
+              "nivel": "Junior",
+              "palabrasclave": [
+                "Control de Versiones", "Colaboracion", "Codigo fuente", "Git"
+                ]
+              },
+              {
+                "nombre": "React",
+                "nivel": "Junior",
+                "palabrasclave": [
+                  "Frontend", "Desarrollo Web", "Libreria JavaScrip"
+                  ]
+                },
+                {
+                  "nombre": "Node.js",
+                  "nivel": "Junior",
+                  "palabrasclave": [
+                    "Backend", "Servidor", "JavaScrip"
+                    ]
+                  }
+              
+    ],
     "Idiomas": [{
       "Idioma": "Español",
       "Nivel": "Hablante nativo",
@@ -83,5 +163,6 @@
       ],
       "url": "https://project.com/"
     }]
-  }
+
+  
 }

@@ -1,0 +1,62 @@
+---
+import Section from "./Section.astro";
+import { Trabajo } from "@/cv.json";
+---
+<Section title="Experiencia">
+    <ul>
+        {
+        Trabajo.map(({ Empresa, cargo, periodo, summary }) =>
+         { return (
+            <li>
+                <article>
+                <header>
+                    <div>
+                <h3>{Empresa}</h3>
+                <h4>{cargo}</h4>
+                    </div>
+                    <p><h5>{periodo}</h5></p>
+                </header>
+
+                <footer>
+                    <p>{summary}</p>
+                </footer>
+                </article>
+                
+                </li>
+        )
+        }
+        )
+    }
+
+    </ul>
+
+</Section>
+
+<style>
+   
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    article h3 {
+        margin-top: 20px;
+        font-size: 450;
+        color: #222;
+    }
+    article h4 {
+        font-weight: 500;
+        font-size: 400;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+
+    h5 {
+        color: #555;
+        font-size: 0.85rem;
+    }
+</style>

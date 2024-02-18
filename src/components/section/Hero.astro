@@ -1,27 +1,48 @@
 ---
-//const { Conceptosbasicos } = require('../cv.json');
-//por q mierda no da 
+
 import { Conceptosbasicos } from "../../cv.json";
 import Section from "./Section.astro";
+import { Image } from 'astro:assets';
+import img1 from "../../img3.jpg";
+import Mail from "@/iconos/Mail.astro";
+import Phone from "@/iconos/Phone.astro";
+import Github from "@/iconos/Github.astro";
+import Linkedin from "@/iconos/Linkedin.astro";
+import World from "@/iconos/World.astro"
+//import type { SocialIcon } from "@/Type";
+//tener cuidado al cambiar los datos, los datos de network no eran los mismos en
+//linkedin de hero y cv, daba error al renderizar, tres dias para resolver ese error.
+//tenian q coincidir, no coincidian, daba error, 13/02/24, tres dias
+
+const RedesSociales: Record<string, any> = {
+    Github,
+    Linkedin,   
+}
 
 
-const { Nombres, Apellidos, Etiqueta, Telefono, CorreoElectronico } = Conceptosbasicos;
+
+
+const { Nombres, Apellidos, Etiqueta, Telefono, CorreoElectronico, profiles  } = Conceptosbasicos;
 
 const { Pais, Estado, Ciudad } = Conceptosbasicos.Ubicacion;
 
-import imagen from "../../imagen.jpg";
+
 
 //const imagen = imagen;
 //en min 26 realizo un truco en el cual en el v.s. metio los componentes en una carpeta y el codigo se actualizo solo!!
 //yo lo realice manualmente
 ---
 
+
 <Section>
     <div class="container">
         <div class="info">
             <h1>{Nombres}</h1>
-            <h3>{Etiqueta}</h3>
+            <h1>{Apellidos}</h1>
+            <h2>{Etiqueta}</h2>
+            
             <span>
+                <World />
                 
                {Pais}, {Ciudad}
             </span>
@@ -30,22 +51,110 @@ import imagen from "../../imagen.jpg";
                    CorreoElectronico &&  (
                      
                       <a
-                     href={`mailto:${CorreoElectronico}`}
+                     href={`mail: ${CorreoElectronico}`}
                      title={`Enviar correo electrónico a ${Nombres} al correo ${CorreoElectronico}`}
                      target="_blank"
                      rel="nooponer noreferrer"
-                     ><!-- Icono de correo electrónico -->
+                     >
+                     <Mail />
                      </a>
                     )
-
                 }
+                {
+                    Telefono &&  (
+                      
+                       <a
+                      href={`tel: ${Telefono}`}
+                      title={`Llmar a: ${Nombres} al numero ${Telefono}`}
+                      target="_blank"
+                      rel="nooponer noreferrer"
+                      >
+                      <Phone />
+                      </a>
+                     )
+                }
+
+                 {
+                    profiles.map(({ network, url, username }) => {
+                     const Icon = RedesSociales[network]
+
+                     return (
+                     <a
+                      href={url}
+                     title={`Visitar el perfil de ${username} en ${network}`}
+                     target="_blank"
+                     rel="noopener noreferrer">
+                     <Icon />
+                     </a>
+            )
+            })
+         }
+                 
 
             </footer>
         </div>
         <figure>
-            <img src= {imagen} /> <!-- Asegúrate de definir la variable 'imagen' -->
+            <Image src= {img1} alt="the kelvin" style="width: 100px; height: 140px; object-fit: cover; border-radius: 6px;"  />
         </figure>
     </div>
 </Section>
 
-<style></style>
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    h1 {
+        font-size: 2rem
+    }
+    h2 {
+        color: #444;
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-wrap: balance;
+        
+    }
+    
+    img {
+          
+    }
+
+    span {
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap: 0.30rem;
+        font-size: 1.00rem;
+        letter-spacing: -0.05rem;
+    }
+    footer {
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    footer a {
+        color: #777;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        padding: 4px;
+        height: 32px;
+        width: 32px;
+        border-radius: 6px;
+        transition: all .3s ease;        
+    }
+    footer a:hover {
+        background: #eee;
+        border: 1px solid #ddd;
+    }
+
+
+
+
+    
+</style>

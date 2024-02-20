@@ -1,7 +1,64 @@
 ---
 import Section from "./Section.astro";
+import { Educacion } from "@/cv.json";
 ---
 <Section title="Educacion">
-    <p>Hola mundo!</p>
+    <ul>
+        {
+        Educacion.map(({ institucion, Titulo, periodo  }) =>
+         { return (
+            <li>
+                <article>
+                <header>
+                    <div>
+                <h3>{institucion}</h3>
+                <h4>{Titulo}</h4>
+                <h5>{periodo}</h5>
+                    </div>
+                    
+                </header>
+
+                <footer>
+                    <p>{}</p>
+                </footer>
+                </article>
+                
+                </li>
+        )
+        }
+        )
+    }
+
+    </ul>
 
 </Section>
+
+
+<style>
+   
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    article h3 {
+        margin-top: 20px;
+        font-size: 450;
+        color: #222;
+    }
+    article h4 {
+        font-weight: 500;
+        font-size: 400;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+
+    h5 {
+        color: #555;
+        font-size: 0.85rem;
+    }
+</style>

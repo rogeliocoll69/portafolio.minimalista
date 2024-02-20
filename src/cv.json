@@ -59,13 +59,27 @@
       "summary": "Comence a trabajar aqui a finales del 2018, aqui obtube muchos conocimientos de matenimiento de infraestructuras, trabajo en alturas, plomeria, electricidad, pintura, lo basico para poder salir adelante"
       }
     ],
-    "EducaciónUnivercitaria": [{
+    "Educacion": [
+      {
+      "institucion": "U.E.N. Luis Beltran Prieto Figueora",
+      "Titulo": "Primaria",
+      "periodo": "2005-06-28"
+      
+      
+      },
+      {
+        "institucion": "L.N. Luis Beltran Prieto Figueora",
+        "Titulo": "Bachiller",
+        "periodo": "2005-09-01 al 2010-06-30"
+        
+        },
+      {
       "institucion": "Universidad Gran Mariscal de Ayacucho",
       "Titulo": "Abogado",
-      "StudyType": "Licenciatura",
-      "StartDate": "2010-09-06",
-      "EndDate": "2015-06-29"
-    }],
+      "periodo": "2010-09-06 al 2015-06-29"
+      
+    }
+  ],
     "certificados": [{
       "nombre": "Certificado",
       "fecha": "2021-11-07",
@@ -153,16 +167,28 @@
       "nombre": "Jose Madriz",
       "referencia": "https://www.linkedin.com/in/madrizjosea/"
     }],
-    "proyectos": [{
-      "nombre": "Proyecto",
-      "fecha de inicio": "2019-01-01",
-      "fecha de finalización": "2021-01-01",
-      "descripción": "Descripción...",
-      "reflejos": [
-        "Ganó el premio en AIHacks 2016"
-      ],
-      "url": "https://project.com/"
-    }]
+    "Projects": [
+      {
+      "nombre": "Flepercolor",
+      "descripcion": "Pequeño proyecto creado para practicar JavaScrip, HTLM y CSS, consiste en apretar un boton y cambia el fondo por un color aleatorio.",
+      "url": "https://github.com/rogeliocoll69/fleper-color"
+    },
+    {
+    "nombre": "Calculadora",
+      "descripcion": "Clasico proyecto para conocer y practicar JavaScrip, HTLM y CSS, es una calculadora con sus funciones basicas.",
+      "url": "https://github.com/rogeliocoll69/Calculadora"
+    },
+    {
+      "nombre": "Aplicacion del clima",
+        "descripcion": "Estuve aprendiendo como crear una app del clima utilizando React y distintas APIs para traer países, ciudades y la información climática.",
+        "url": "https://github.com/rogeliocoll69/app.clima/tree/ramanueva"
+      },
+      {
+        "nombre": "Portafolio Minimalista",
+          "descripcion": "Portafolio Minimalista creado con Astro, realizado lo mas minimalista y bonito posible.",
+          "url": "https://github.com/rogeliocoll69/portafolio.minimalista/tree/nuevaramaborrartodo"
+        }
+  ]
 
   
 }
